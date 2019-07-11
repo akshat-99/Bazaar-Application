@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="893.0" prefWidth="1156.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bazaarnew.ProductController">
+   <top>
+      <AnchorPane prefHeight="889.0" prefWidth="1150.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imageView1" fitHeight="294.0" fitWidth="446.0" layoutX="43.0" layoutY="83.0" onMouseEntered="#hover" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/acer/Documents/NetBeansProjects/bazaarnew/Res/no-image.png" />
+               </image></ImageView>
+            <Button fx:id="addToCartButton" layoutX="810.0" layoutY="159.0" mnemonicParsing="false" onAction="#addToCartButtonFunc" prefHeight="44.0" prefWidth="164.0" styleClass="fx-button" text="Add To Cart" textFill="WHITE" />
+            <Label layoutX="51.0" layoutY="394.0" text="Product Name" textFill="WHITE" />
+            <Label layoutX="51.0" layoutY="432.0" text="Manufacturing Date" textFill="WHITE" />
+            <Label layoutX="51.0" layoutY="472.0" text="Expiry Date" textFill="WHITE" />
+            <Label layoutX="51.0" layoutY="513.0" text="Seller" textFill="WHITE" />
+            <Label layoutX="51.0" layoutY="552.0" text="Category" textFill="WHITE" />
+            <Label fx:id="productName" layoutX="295.0" layoutY="394.0" text="Product Name" textFill="WHITE" />
+            <Label fx:id="manufacturingDate" layoutX="295.0" layoutY="432.0" text="Product Name" textFill="WHITE" />
+            <Label fx:id="expiryDate" layoutX="295.0" layoutY="472.0" text="Product Name" textFill="WHITE" />
+            <Label fx:id="seller" layoutX="295.0" layoutY="513.0" text="Product Name" textFill="WHITE" />
+            <Label fx:id="category" layoutX="295.0" layoutY="552.0" text="Product Name" textFill="WHITE" />
+            <ImageView fx:id="imageView4" fitHeight="106.0" fitWidth="137.0" layoutX="522.0" layoutY="280.0" onMouseEntered="#hover" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/acer/Documents/NetBeansProjects/bazaarnew/Res/no-image.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imageView3" fitHeight="106.0" fitWidth="137.0" layoutX="522.0" layoutY="181.0" onMouseEntered="#hover" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/acer/Documents/NetBeansProjects/bazaarnew/Res/no-image.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imageView2" fitHeight="106.0" fitWidth="137.0" layoutX="522.0" layoutY="83.0" onMouseEntered="#hover" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/acer/Documents/NetBeansProjects/bazaarnew/Res/no-image.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="51.0" layoutY="590.0" text="Price" textFill="WHITE" />
+            <Label fx:id="price" layoutX="295.0" layoutY="589.0" text="Product Name" textFill="WHITE" />
+            <Label layoutX="51.0" layoutY="631.0" text="Discount" textFill="WHITE" />
+            <Label fx:id="discount" layoutX="295.0" layoutY="629.0" text="Product Name" textFill="WHITE" />
+            <Label layoutX="51.0" layoutY="674.0" text="Offer Price" textFill="WHITE" />
+            <Label fx:id="offerPrice" layoutX="295.0" layoutY="674.0" text="Product Name" textFill="WHITE" />
+            <Label layoutX="554.0" layoutY="432.0" text="Specifications" textFill="WHITE" />
+            <Label layoutX="554.0" layoutY="659.0" text="Description" textFill="WHITE" />
+            <JFXTextArea fx:id="specifications" layoutX="554.0" layoutY="462.0" styleClass="textbox" />
+            <JFXTextArea fx:id="descriptions" layoutX="554.0" layoutY="689.0" styleClass="textbox" />
+            <Button fx:id="addToWishlistButton" layoutX="809.0" layoutY="258.0" mnemonicParsing="false" onAction="#addToWishlistButtonFunc" styleClass="fx-button" text="Add To Wishlist" textFill="WHITE" />
+            <Line endX="1054.0" layoutX="101.0" layoutY="387.0" startX="-100.0" stroke="#57d057" strokeWidth="3.0" />
+            <Line endX="1054.0" layoutX="101.0" layoutY="891.0" startX="-100.0" stroke="#57d057" strokeWidth="3.0" />
+            <Label layoutX="55.0" layoutY="14.0" text="Product Details" textFill="WHITE">
+               <font>
+                  <Font size="32.0" />
+               </font></Label>
+            <ImageView fitHeight="48.0" fitWidth="56.0" layoutX="1086.0" layoutY="16.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/acer/Documents/NetBeansProjects/bazaarnew/Res/010_x-3-512.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.0" fitWidth="49.0" layoutX="1019.0" layoutY="16.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/acer/Documents/NetBeansProjects/bazaarnew/Res/back.png" />
+               </image>
+            </ImageView>
+            <Line endX="1054.0" layoutX="101.0" layoutY="74.0" startX="-100.0" stroke="#57d057" strokeWidth="3.0" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

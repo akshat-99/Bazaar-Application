@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import com.jfoenix.controls.*?>
+<?import org.controlsfx.control.textfield.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="stackPane" prefHeight="473.0" prefWidth="459.0" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bazaarnew.LoginController">
+         <children>
+            <AnchorPane id="AnchorPane" fx:id="rootAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="459.0" styleClass="root">
+               <children>  
+       <Label layoutX="145.0" layoutY="4.0" text="User Login" textFill="WHITE">
+         <font>
+           <Font size="34.0" />
+         </font>
+       </Label>
+            <Line endX="358.0" layoutX="101.0" layoutY="65.0" startX="-100.0" stroke="#57d057" strokeWidth="2.5" />
+       <Button fx:id="loginButton" layoutX="152.0" layoutY="305.0" mnemonicParsing="false" onAction="#loginButtonAction" styleClass="fx-button" stylesheets="@style.css" text="Login" textFill="WHITE">
+         <font>
+           <Font size="20.0" fx:id="x1" />
+         </font>
+       </Button>
+       <Button id="registerButton" fx:id="resetButton" font="$x1" layoutX="286.0" layoutY="305.0" mnemonicParsing="false" onAction="#resetButtonAction" styleClass="fx-button" stylesheets="@style.css" text="Reset" textFill="WHITE" />
+       <Button fx:id="registerButton" font="$x1" layoutX="306.0" layoutY="396.0" mnemonicParsing="false" onAction="#registerButtonAction" styleClass="fx-button" stylesheets="@style.css" text="Register" textFill="WHITE" />
+       <Label layoutX="76.0" layoutY="402.0" text="Not Registered Yet?" textFill="WHITE">
+         <font>
+           <Font size="22.0" />
+         </font>
+       </Label>
+       <ImageView fx:id="close" fitHeight="30.0" fitWidth="30.0" layoutX="414.0" layoutY="14.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+         <image>
+           <Image url="file:/C:/Users/KRITANK/Documents/NetBeansProjects/bazaarnew/Res/010_x-3-512.png" />
+         </image>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+       </ImageView>
+       <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="82.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+           <Image url="file:/C:/Users/KRITANK/Documents/NetBeansProjects/bazaarnew/Res/lock.png" />
+         </image>
+       </ImageView>
+       <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="82.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="file:/C:/Users/KRITANK/Documents/NetBeansProjects/bazaarnew/Res/user.png" />
+            </image>
+       </ImageView>
+         <JFXTextField fx:id="Username" focusColor="#57d057" labelFloat="true" layoutX="133.0" layoutY="116.0" promptText="Username" styleClass="fx-jfxtextfeild" stylesheets="@style.css" unFocusColor="WHITE">
+            <font>
+               <Font size="22.0" />
+            </font>
+         </JFXTextField>
+         <JFXPasswordField fx:id="Password" focusColor="#57d057" labelFloat="true" layoutX="127.0" layoutY="215.0" promptText="Password" styleClass="fx-jfxtextfeild" stylesheets="@style.css" unFocusColor="WHITE">
+            <font>
+               <Font size="22.0" />
+            </font>
+         </JFXPasswordField>
+            <Line endX="358.0" layoutX="101.0" layoutY="469.5" startX="-100.0" stroke="#57d057" strokeWidth="2.5" />
+               </children>
+     </AnchorPane>
+  </children>
+ </StackPane>

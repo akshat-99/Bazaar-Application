@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="799.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bazaarnew.CartController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <AnchorPane fx:id="topAnchorPane" prefHeight="110.0" prefWidth="600.0" styleClass="root" stylesheets="@style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="14.0" layoutY="4.0" text="Bazzar" textFill="WHITE">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="close" fitHeight="30.0" fitWidth="30.0" layoutX="762.0" layoutY="14.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/KRITANK/Documents/NetBeansProjects/bazaarnew/Res/010_x-3-512.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="back" fitHeight="30.0" fitWidth="30.0" layoutX="722.0" layoutY="14.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/KRITANK/Documents/NetBeansProjects/bazaarnew/Res/back.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Line endX="705.0" layoutX="101.0" layoutY="60.0" startX="-100.0" stroke="#57d057" strokeWidth="4.0" />
+                  <MenuBar layoutX="-1.0" layoutY="62.0" prefHeight="50.0" prefWidth="810.0">
+                    <menus>
+                        <Menu mnemonicParsing="false">
+                           <graphic>
+                              <Label fx:id="home" onMouseClicked="#homeMenuButtonFunc" text="Home" />
+                           </graphic>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Categories">
+                        <items>
+                          <MenuItem fx:id="fashionMenuItem" mnemonicParsing="false" onAction="#fashionMenuItemFunc" text="Fashion" />
+                              <MenuItem fx:id="furnitureMenuItem" mnemonicParsing="false" onAction="#furnitureMenuItemFunc" text="Furniture" />
+                              <MenuItem fx:id="groceryMenuItem" mnemonicParsing="false" onAction="#groceryMenuItemFunc" text="Grocery" />
+                        </items>
+                      </Menu>
+                        <Menu mnemonicParsing="false">
+                           <graphic>
+                              <Label fx:id="wishlist" onMouseClicked="#wishlistMenuButtonFunc" text="WishList" />
+                           </graphic>
+                        </Menu>
+                        
+                        <Menu mnemonicParsing="false">
+                           <graphic>
+                              <Label fx:id="orders" onMouseClicked="#orderMenuButtonFunc" text="My Orders" />
+                           </graphic></Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </AnchorPane>
+       </top>
+         <center>
+            <AnchorPane fx:id="anchorPane" prefHeight="495.0" prefWidth="809.0" styleClass="root" BorderPane.alignment="CENTER">
+               <children>
+                  <ListView fx:id="cartList" layoutX="14.0" layoutY="16.0" prefHeight="259.0" prefWidth="275.0" styleClass="root" />
+                  <Label layoutX="628.0" layoutY="49.0" text="Total" textFill="WHITE">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="amount" layoutX="634.0" layoutY="110.0" textFill="WHITE">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="buyButton" layoutX="593.0" layoutY="201.0" mnemonicParsing="false" onAction="#buyButtonFunc" styleClass="fx-button" text="Buy" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="25.0" right="25.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="resetButton" layoutX="695.0" layoutY="201.0" mnemonicParsing="false" onAction="#resetButtonFunc" styleClass="fx-button" text="Reset" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Line endX="705.0" layoutX="102.0" layoutY="598.0" startX="-100.0" stroke="#57d057" strokeWidth="4.0" />
+                  <TableView fx:id="cart" layoutX="20.0" layoutY="24.0" prefHeight="533.0" prefWidth="550.0">
+                    <columns>
+                      <TableColumn fx:id="productNameCol" prefWidth="200.0" text="Product Name" />
+                      <TableColumn fx:id="quantityCol" prefWidth="100.0" text="Quantity" />
+                        <TableColumn fx:id="costCol" prefWidth="100.0" text="Cost" />
+                        <TableColumn fx:id="sellerCol" prefWidth="150.0" text="Seller" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

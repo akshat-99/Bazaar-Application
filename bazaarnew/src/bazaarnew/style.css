@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 Mar, 2019, 12:36:11 PM
+    Author     : KRITANK
+*/
+*{
+    -fx-back:#2D3447;
+    -fx-button-color:#2196f3;
+    -fx-button-text:#ffffff;
+    -fx-button-hover:#57d057;
+    -fx-dialog-button:#FF0000;
+}
+.root{
+    -fx-background-color:  -fx-back;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    
+        
+}
+
+.fx-button{
+    -fx-background-color: -fx-button-color;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-fill-text:-fx-button-text;
+}
+
+.fx-button:hover{
+    -fx-background-color: -fx-button-hover;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-fill-text:-fx-button-text;
+    
+}
+
+.fx-jfxtextfeild{
+    -fx-text-inner-color:white;
+    -fx-prompt-text-fill:#bbbfbb; 
+}
+
+
+
+.textbox{
+    -fx-text-box-border: transparent;
+    -fx-focus-color: transparent; 
+    -fx-control-inner-background:#2D3447;
+    -fx-text-fill: #ffffff; 
+      
+}

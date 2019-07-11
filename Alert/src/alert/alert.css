@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11 Mar, 2019, 10:16:01 AM
+    Author     : KRITANK
+*/
+
+
+.fx-dialog-button{
+    -fx-background-color: -fx-dialog-button;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-fill-text:-fx-button-text;
+}
+
+.fx-dialog-button:hover{
+    -fx-background-color: -fx-button-hover;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-fill-text:-fx-button-text;
+    
+}
+
+.fx-dialog-text{
+    font-size: 20px;
+}

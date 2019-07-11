@@ -1,0 +1,56 @@
+
+*{
+    -fx-back:#2D3447;
+    -fx-button-color:#2196f3;
+    -fx-button-text:#ffffff;
+    -fx-button-hover:#57d057;
+}
+.root{
+    -fx-background-color:  -fx-back;
+    /*-fx-font-size: 20px;*/
+    -fx-text-fill: white;
+    
+        
+}
+
+.fx-button{
+    -fx-background-color: -fx-button-color;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-fill-text:-fx-button-text;
+}
+
+.fx-button:hover{
+    -fx-background-color: -fx-button-hover;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-fill-text:-fx-button-text;
+    
+}
+
+.fx-jfxtextfeild{
+    -fx-text-inner-color:white;
+    -fx-prompt-text-fill:#bbbfbb; 
+}
+
+.fx-red-radio-button .dot {
+  -fx-mark-highlight-color: red ;
+  -fx-mark-color: red ;
+}
+
+.fx-green-radio-button .dot {
+  -fx-mark-highlight-color: #bbbfbb ;
+  -fx-mark-color: #bbbfbb ;
+}
+
+.img{
+    -fx-background:#bbbfbb;
+}
+
+.textbox{
+    -fx-text-box-border: transparent;
+    -fx-focus-color: transparent; 
+    -fx-control-inner-background:#2D3447;
+    -fx-text-fill: #ffffff; 
+      
+}

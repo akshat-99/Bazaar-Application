@@ -1,0 +1,15 @@
+BoxBlur blur=new BoxBlur(3,3,3);
+                    JFXDialogLayout dialogLayout=new JFXDialogLayout();
+                    JFXButton button=new JFXButton("Okay!");
+                    JFXDialog dialog=new JFXDialog(stackPane, dialogLayout, JFXDialog.DialogTransition.TOP, true);
+                    button.addEventHandler(MouseEvent.MOUSE_CLICKED, (MouseEvent mouseEvent) ->{
+                    dialog.close();
+                    });
+                    button.getStyleClass().add("fx-dialog-button");
+                    dialogLayout.setHeading(new Label("No Connection"));
+                    dialogLayout.setActions(button);
+                    dialog.show();
+                    rootAnchor.setEffect(blur);
+                    dialog.setOnDialogClosed((JFXDialogEvent event1) -> {
+                        rootAnchor.setEffect(null);
+                    });

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="stackPane" prefHeight="316.0" prefWidth="607.0" stylesheets="@admin.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bazzarserver.AdminController">
+         <children>
+           <AnchorPane id="AnchorPane" fx:id="rootAnchor" prefHeight="316.0" prefWidth="607.0" styleClass="root">
+               <children>
+                  <ImageView fx:id="min" fitHeight="30.0" fitWidth="30.0" layoutX="524.0" layoutY="14.0" onMouseClicked="#min" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="file:/C:/Users/KRITANK/Documents/NetBeansProjects/BazzarServer/Res/min.png" />
+                     </image>
+                  </ImageView>
+               
+       <Label layoutX="16.0" layoutY="12.0" text="Admin Portal" textFill="#e8e4e4">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Line endX="504.0" layoutX="101.0" layoutY="70.0" startX="-100.0" stroke="#57d057" strokeWidth="2.0" />
+      <RadioButton fx:id="StatusButton" layoutX="75.0" layoutY="98.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="140.0" text="Server Satus" textFill="#bbbfbb" />
+      <Button fx:id="startButton" layoutX="275.0" layoutY="93.0" mnemonicParsing="false" onAction="#startButtonAction" styleClass="fx-button" text="Start" textFill="WHITE">
+         <padding>
+            <Insets bottom="5.0" left="25.0" right="25.0" top="5.0" />
+         </padding></Button>
+      <Button fx:id="stopButton" layoutX="427.0" layoutY="93.0" mnemonicParsing="false" onAction="#stopButtonAction" styleClass="fx-button" text="Stop" textFill="WHITE">
+         <padding>
+            <Insets bottom="5.0" left="25.0" right="25.0" top="5.0" />
+         </padding></Button>
+      <Line endX="504.0" layoutX="101.0" layoutY="155.0" startX="-100.0" stroke="#57d057" strokeWidth="2.0" />
+      <ImageView fx:id="close" fitHeight="30.0" fitWidth="30.0" layoutX="563.0" layoutY="14.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/KRITANK/Documents/NetBeansProjects/BazzarServer/Res/010_x-3-512.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="userDetails" fitHeight="80.0" fitWidth="80.0" layoutX="27.0" layoutY="170.0" onMouseClicked="#userDetails" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/KRITANK/Documents/NetBeansProjects/BazzarServer/Res/user_search.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="add" fitHeight="80.0" fitWidth="80.0" layoutX="141.0" layoutY="174.0" onMouseClicked="#add" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/KRITANK/Documents/NetBeansProjects/BazzarServer/Res/add_item.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="edit" fitHeight="100.0" fitWidth="100.0" layoutX="253.0" layoutY="164.0" onMouseClicked="#edit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/KRITANK/Documents/NetBeansProjects/BazzarServer/Res/edit.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="discount" fitHeight="80.0" fitWidth="80.0" layoutX="504.0" layoutY="174.0" onMouseClicked="#discount" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/KRITANK/Documents/NetBeansProjects/BazzarServer/Res/special_offers.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="salesRecord" fitHeight="80.0" fitWidth="80.0" layoutX="380.0" layoutY="174.0" onMouseClicked="#salesRecord" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/KRITANK/Documents/NetBeansProjects/BazzarServer/Res/sales_record.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="27.0" layoutY="268.0" text="User Details" textFill="#f8f7f7" />
+      <Label layoutX="164.0" layoutY="268.0" text="Add" textFill="#f8f7f7" />
+      <Label layoutX="369.0" layoutY="268.0" text="Sales Record" textFill="#f8f7f7" />
+      <Label layoutX="288.0" layoutY="268.0" text="Edit" textFill="#f8f7f7" />
+      <Label layoutX="509.0" layoutY="268.0" text="Discount" textFill="#f8f7f7" />
+      <Line endX="504.0" layoutX="101.0" layoutY="315.0" startX="-100.0" stroke="#57d057" strokeWidth="2.0" />
+   </children>
+ </AnchorPane>
+   </children>
+      </StackPane>
